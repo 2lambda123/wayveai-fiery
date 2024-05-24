@@ -84,7 +84,7 @@ def download_example_data():
         # open in binary mode
         with open(file_name, "wb") as file:
             # get request
-            response = get(url)
+            response = get(url, timeout=60)
             # write to file
             file.write(response.content)
 
