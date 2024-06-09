@@ -78,7 +78,7 @@ def plot_prediction(image, output, cfg):
 
 
 def download_example_data():
-    from requests import get
+    from security.safe_requests import get
 
     def download(url, file_name):
         # open in binary mode
